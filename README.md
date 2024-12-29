@@ -38,7 +38,7 @@ Setup
 
 Clone this repository:
 
-git clone https://github.com/yourusername/kavach.git
+git clone https://github.com/ShivamAdke/Kavach---The-Ultimate-Protector.git
 cd kavach
 
 Install dependencies:
