@@ -18,6 +18,34 @@
 
 Kavach is a powerful script designed to detect rogue access points, even with MAC randomization, and provides options to either log or deauthenticate them. It is built for educational purposes and to help protect networks and sensitive data.
 
+<h2 style="font-size:24px; font-style:italic;">Role of WiFi Pineapple in Kavach</h2>
+
+The WiFi Pineapple is a key component used in this project to simulate and detect rogue access points effectively. It is a specialized penetration testing tool designed by Hak5 for wireless network auditing. In this project:
+
+Testing Rogue APs: The WiFi Pineapple acts as a rogue access point to mimic malicious networks, making it ideal for simulating attack scenarios.
+
+Traffic Analysis: It captures wireless traffic, enabling the identification of unusual patterns, probing attempts, and unauthorized devices connecting to the network.
+
+MAC Randomization Testing: The WiFi Pineapple can simulate APs with randomized MAC addresses, providing an environment to test Kavach’s ability to detect anomalies and inconsistencies.
+
+Deauthentication Testing: By broadcasting multiple SSIDs, it helps evaluate Kavach’s response to excessive signal variations and the accuracy of deauthentication attacks.
+
+<h2 style="font-size:24px; font-style:italic;">Role of WiFi Adapter in Kavach</h2>
+
+A WiFi adapter with monitor mode and packet injection support is crucial for the Kavach project. The adapter performs the following tasks:
+
+Packet Sniffing: It listens to wireless traffic, capturing management frames (beacons, probes) from nearby networks.
+
+Monitor Mode Operation: It enables passive monitoring without actively connecting to any access point, which is essential for identifying rogue APs.
+
+MAC Address Analysis: It inspects MAC addresses and their associated SSIDs to detect randomization patterns or inconsistencies that signal a rogue AP.
+
+Deauthentication Attacks: The adapter is used to send deauth packets to forcefully disconnect clients from rogue APs, making it effective in mitigating threats in real time.
+
+Signal Strength Monitoring: It measures RSSI (Received Signal Strength Indicator) values, helping Kavach detect anomalies caused by rogue devices broadcasting stronger signals than legitimate networks.
+
+By combining the WiFi Pineapple for controlled testing and the WiFi adapter for scanning and defense, Kavach provides a comprehensive solution for rogue AP detection, logging, and mitigation.
+
 <h1 style="color:blue; font-weight:bold;">Features</h1>
 
 Detects rogue access points, including those with randomized MAC addresses.
@@ -33,6 +61,8 @@ Provides detailed logs for further analysis.
 User-friendly command-line interface.
 
 <h1 style="color:blue; font-weight:bold;">Requirements</h1>
+
+Kali linux as os
 
 Python 3
 
