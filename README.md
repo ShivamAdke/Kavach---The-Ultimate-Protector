@@ -1,10 +1,24 @@
-Kavach - The Ultimate Protector
+<h1 style="text-align:center;">
+# Kavach - The Ultimate Protector
 
-Overview
+```
+██╗  ██╗ █████╗ ██╗   ██╗ █████╗  ██████╗██╗  ██╗
+██║ ██╔╝██╔══██╗██║   ██║██╔══██╗██╔════╝██║  ██║
+█████╔╝ ███████║██║   ██║███████║██║     ███████║
+██╔═██╗ ██╔══██║╚██╗ ██╔╝██╔══██║██║     ██╔══██║
+██║  ██╗██║  ██║ ╚████╔╝ ██║  ██║╚██████╗██║  ██║
+╚═╝  ╚═╝╚═╝  ╚═╝  ╚═══╝  ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝
+
+              Kavach - The Ultimate Protector
+----------------------------------------------------
+```
+</h1>
+
+<h1 style="color:blue; font-weight:bold;">Overview</h1>
 
 Kavach is a powerful script designed to detect rogue access points, even with MAC randomization, and provides options to either log or deauthenticate them. It is built for educational purposes and to help protect networks and sensitive data.
 
-Features
+<h1 style="color:blue; font-weight:bold;">Features</h1>
 
 Detects rogue access points, including those with randomized MAC addresses.
 
@@ -18,7 +32,7 @@ Provides detailed logs for further analysis.
 
 User-friendly command-line interface.
 
-Requirements
+<h1 style="color:blue; font-weight:bold;">Requirements</h1>
 
 Python 3
 
@@ -34,30 +48,31 @@ argparse
 
 statistics
 
-Setup
+<h1 style="color:blue; font-weight:bold;">Setup</h1>
 
-Clone this repository:
+1.Clone this repository:
 
 git clone https://github.com/ShivamAdke/Kavach---The-Ultimate-Protector.git
+
 cd kavach
 
-Install dependencies:
+2.Install dependencies:
 
 pip install -r requirements.txt
 
-Update the Discord webhook link in the script:
+3.Update the Discord webhook link in the script:
 
 WEBHOOK_URL = "https://discord.com/api/webhooks/YOUR_WEBHOOK_URL"
 
-Usage
+<h1 style="color:blue; font-weight:bold;">Usage</h1>
 
 Run the script with sudo to ensure proper permissions:
 
-Command Structure
+<h1 style="color:blue; font-weight:bold;">Command Structure</h1>
 
 sudo python kavach.py -m <mode> -i <interface>
 
-Modes:
+<h1 style="color:blue; font-weight:bold;">Modes:</h1>
 
 Log Only - Logs rogue AP activities:
 
@@ -69,7 +84,7 @@ sudo python kavach.py -m 2 -i wlan0
 
 Replace wlan0 with your wireless interface in monitor mode.
 
-Output
+<h1 style="color:blue; font-weight:bold;">Output</h1>
 
 Logs are saved to:
 
@@ -77,38 +92,38 @@ Logs are saved to:
 
 Alerts are sent to the configured Discord Webhook.
 
-Example Output
+<h1 style="color:blue; font-weight:bold;">Example Output</h1>
 
 [Detected] Monday | 12/25/2024 | 10:45:12 | MAC: 00:11:22:33:44:55 | RogueAP Count: 3
 [*] Deauth Attack on 00:11:22:33:44:55
 [*] Attack completed.
 
-Disclaimer
+<h1 style="color:blue; font-weight:bold;">Disclaimer</h1>
 
 This tool is strictly for educational and security auditing purposes only. Use it responsibly and with proper authorization. Misuse of this tool may result in legal consequences. The creators are not responsible for any misuse or damage caused.
 
-References
+<h1 style="color:blue; font-weight:bold;">References</h1>
 
 Inspired by tools and techniques demonstrated by Hak5:
 
 Hak5 Tools and Tutorials
 
-License
+<h1 style="color:blue; font-weight:bold;">License</h1>
 
 This project is licensed under the MIT License
 
-Contributing
+<h1 style="color:blue; font-weight:bold;">Contributing</h1>
 
 Feel free to fork this repository, submit issues, or create pull requests to improve this project.
 
-Support
+<h1 style="color:blue; font-weight:bold;">Support</h1>
 
 For any queries or issues, reach out via GitHub issues or Discord channel.
 
-Authors
+<h1 style="color:blue; font-weight:bold;">Authors</h1>
 
 Shivam
 
-Important Notes
+<h1 style="color:blue; font-weight:bold;">Important Notes</h1>
 
 Always test this tool in a controlled environment. Do not use it on unauthorized networks.
