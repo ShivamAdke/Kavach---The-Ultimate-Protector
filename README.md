@@ -74,11 +74,11 @@ sudo python kavach.py -m <mode> -i <interface>
 
 <h1 style="color:blue; font-weight:bold;">Modes:</h1>
 
-Log Only - Logs rogue AP activities:
+1.Log Only - Logs rogue AP activities:
 
 sudo python kavach.py -m 1 -i wlan0
 
-Log & Deauth - Logs and deauthenticates rogue APs:
+2.Log & Deauth - Logs and deauthenticates rogue APs:
 
 sudo python kavach.py -m 2 -i wlan0
 
